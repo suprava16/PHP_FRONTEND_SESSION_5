@@ -1,0 +1,38 @@
+body{
+  height: 900px;
+}
+.main{
+  border: 3px solid red;
+  height: 400px;
+  width: 500px;
+  /* position: relative; */
+}
+.div1{
+  background-color: crimson;
+  height: 100px;
+  width: 100px;
+}
+.div2{
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  /* position:relative;
+  left: 100px;
+  top:200px; */
+  /* position: absolute; */
+  /* left: 100px;
+  top:50px; */
+  /* right: 0; */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+}
+
+.div3{
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+
