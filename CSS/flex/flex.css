@@ -1,0 +1,17 @@
+.flex-container{
+  background-color: lightsalmon;
+  display: flex;
+  /* flex-direction: column-reverse/row/column/row-reverse ; */
+  /* justify-content: space-around/space-between/flex-end/flex-start/space-evenly; */
+  /* height: 600px;
+  align-items: center; */
+flex-wrap: nowrap;
+
+}
+.item{
+  background-color:teal;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  width: 400px;
+}
