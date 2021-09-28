@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="password" id="password_id" placeholder="enter password">
+  
+  <button type="submit" onclick=" return checkPassword()">Click here</button>
+  <div id="result" style="color:red; width: 200px;"></div>
+
+  <script>
+function checkPassword(){
+  var pass=document.getElementById("password_id").value;
+  var regex=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/ ;
+
+  if(pass.match(regex)){
+    alert("password is correct");
+    return true;
+  }
+  else{
+    document.getElementById("result").innerHTML="password must contain atleast one uppercase,one lw,one numeric value, one special character and the length must be in between 8 to 15";
+  return false;
+  }
+
+}
+  </script>
+</body>
+</html>
